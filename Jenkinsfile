@@ -16,9 +16,9 @@ pipeline {
 
         stage('Validate Git') {
             steps {
-                bat 'git --version'
-                bat 'git status --short'
-                bat 'git log -1 --oneline'
+                sh 'git --version'
+                sh 'git status --short'
+                sh 'git log -1 --oneline'
             }
         }
 
